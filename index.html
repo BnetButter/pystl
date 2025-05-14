@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-	<title>DevConf - Bootstrap 5 Template For Tech Conference or Events</title>
+	<title>PySTL - Python Developer Meetup in St. Louis</title>
 	
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -28,10 +28,10 @@
 		<div class="branding">
 			<div class="container-fluid">
 				<nav class="main-nav navbar navbar-expand-lg">
-					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon" src="assets/images/logo-white.svg" alt="logo"></a></div>    
+					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon" src="/favicon.png" alt="logo"></a></div>    
 					
-					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Tickets</a></div>
-					
+					<!--<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Tickets</a></div>-->
+		
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -65,13 +65,42 @@
 				</div>
 			</div>
 		</div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              function updateActiveCarouselItem() {
+                var carouselItem1 = document.querySelector('#hero-carousel .carousel-item-1');
+                var carouselItem2 = document.querySelector('#hero-carousel .carousel-item-2');
+                var carouselItem3 = document.querySelector('#hero-carousel .carousel-item-3');
+          
+                if (window.innerWidth <= 767) {
+                  // On mobile, set item 2 as active and hide others
+                  carouselItem1.classList.remove('active');
+                  carouselItem2.classList.add('active');
+                  carouselItem3.classList.remove('active');
+                } else {
+                  // On larger screens, set item 1 as active
+                  carouselItem1.classList.add('active');
+                  carouselItem2.classList.remove('active');
+                  carouselItem3.classList.remove('active');
+                }
+              }
+          
+              // Initialize the active item on page load
+              updateActiveCarouselItem();
+          
+              // Update active item when the window is resized
+              window.addEventListener('resize', function () {
+                updateActiveCarouselItem();
+              });
+            });
+          </script>
 		<div class="hero-block-mask"></div>
 		<div class="container">
 			<div class="hero-text-block">
-				<h1 class="hero-heading mb-2">DevConf 2028</h1>
-				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>12 - 15 Oct <i class="fas fa-map-marker-alt mx-2"></i>New York, USA</div>
-				<div class="hero-intro mb-4">The #1 Bootstrap Template for <br>Tech Conferences and Events.</div>
-				<div class="hero-cta"><a class="btn btn-primary btn-lg" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Get Tickets</a></div>
+				<h1 class="hero-heading mb-2">PySTL</h1>
+				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>June 19th<i class="fas fa-map-marker-alt mx-2"></i>St. Louis, MO</div>
+				<div class="hero-intro mb-4">Every 3rd Thursdays<br>6pm-8pm</div>
+				<!-- <div class="hero-cta"><a class="btn btn-primary btn-lg" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Get Tickets</a></div> -->
 				
 			</div><!--//hero-text-block-->
 		</div><!--//container-->
@@ -83,26 +112,22 @@
 			<div class="row">
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">2000+</div>
-						<div class="unit">Attendees</div>
+						<div class="number">Web Dev</div>
 					</div><!--//item-->
 				</div><!--//col-->
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">3</div>
-						<div class="unit">Days</div>
+						<div class="number">Geospatial</div>
 					</div><!--//item-->
 				</div><!--//col-->
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">60+</div>
-						<div class="unit">Talks</div>
+						<div class="number">Data Science</div>
 					</div><!--//item-->
 				</div><!--//col-->
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">10+</div>
-						<div class="unit">Workshops</div>
+						<div class="number">ML/AI</div>
 					</div><!--//item-->
 				</div><!--//col-->
 			</div>
