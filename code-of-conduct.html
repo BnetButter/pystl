@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>PySTL - Python Developer Meetup in St. Louis</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A meetup for Python Developers">
+	<meta name="author" content="Kevin Lai">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800|Roboto:300,400,700&display=swap"
+		rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+
+</head>
+
+<body>
+	<header id="header" class="header fixed-top">
+		<div class="branding">
+			<div class="container-fluid">
+				<nav class="main-nav navbar navbar-expand-lg">
+					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon"
+								src="favicon.png" alt="logo"></a></div>
+
+					<!--<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Tickets</a></div>-->
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div id="navigation" class="navbar-collapse collapse  justify-content-lg-end me-lg-3">
+						<ul class="nav navbar-nav">
+							<li class="nav-item"><a class="nav-link" href="./index.html#about-section">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="./index.html#talk-section">Talk of the Month</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="./index.html#schedule-section">Schedule</a></li>
+							<li class="nav-item"><a class="nav-link"
+									href="./index.html#steering-committee-section">Steering Comittee</a></li>
+							<li class="nav-item"><a class="nav-link" href="./index.html#venue-section">Venue</a></li>
+							<li class="nav-item"><a class="nav-link" href="./code-of-conduct.html">Code of Conduct</a></li>
+						</ul><!--//nav-->
+					</div><!--//navabr-collapse-->
+
+				</nav><!--//main-nav-->
+
+			</div><!--//container-->
+		</div><!--//branding-->
+	</header><!--//header-->
+
+	<div id="hero-block" class="hero-block">
+		<div id="hero-carousel" class="hero-carousel carousel slide carousel-fade" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item-1 carousel-item active">
+				</div>
+				<div class="carousel-item-2 carousel-item">
+				</div>
+				<div class="carousel-item-3 carousel-item">
+				</div>
+			</div>
+		</div>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				function updateActiveCarouselItem() {
+					var carouselItem1 = document.querySelector('#hero-carousel .carousel-item-1');
+					var carouselItem2 = document.querySelector('#hero-carousel .carousel-item-2');
+					var carouselItem3 = document.querySelector('#hero-carousel .carousel-item-3');
+
+					if (window.innerWidth <= 767) {
+						// On mobile, set item 2 as active and hide others
+						carouselItem1.classList.remove('active');
+						carouselItem2.classList.add('active');
+						carouselItem3.classList.remove('active');
+					} else {
+						// On larger screens, set item 1 as active
+						carouselItem1.classList.add('active');
+						carouselItem2.classList.remove('active');
+						carouselItem3.classList.remove('active');
+					}
+				}
+
+				// Initialize the active item on page load
+				updateActiveCarouselItem();
+
+				// Update active item when the window is resized
+				window.addEventListener('resize', function () {
+					updateActiveCarouselItem();
+				});
+			});
+		</script>
+		<div class="hero-block-mask"></div>
+		<div class="container">
+			<div class="hero-text-block">
+				<h1 class="hero-heading mb-2">PySTL</h1>
+				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>July 17th<br /><i
+						class="fas fa-map-marker-alt"></i> 4818 Washington Boulevard, St. Louis</div>
+				<div class="hero-intro mb-4">Every 3rd Thursdays<br>6pm-8pm</div>
+				<!-- <div class="hero-cta"><a class="btn btn-primary btn-lg" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Get Tickets</a></div> -->
+
+			</div><!--//hero-text-block-->
+		</div><!--//container-->
+
+	</div><!--//hero-block-->
+
+	<div class="stats-block theme-bg-primary text-white py-4 text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-md-3 text-sm">
+					<div class="item">
+						<div class="number" style="font-size:x-large">Web Dev</div>
+					</div><!--//item-->
+				</div><!--//col-->
+				<div class="col-6 col-md-3">
+					<div class="item">
+						<div class="number" style="font-size:x-large">Geospatial</div>
+					</div><!--//item-->
+				</div><!--//col-->
+				<div class="col-6 col-md-3">
+					<div class="item">
+						<div class="number" style="font-size:x-large">Data Science</div>
+					</div><!--//item-->
+				</div><!--//col-->
+				<div class="col-6 col-md-3">
+					<div class="item">
+						<div class="number" style="font-size:x-large">ML/AI</div>
+					</div><!--//item-->
+				</div><!--//col-->
+			</div>
+		</div><!--//container-->
+	</div><!--//stats-block-->
+
+
+
+    <section id="schedule-section" class="schedule-section section">
+        <div class="container">
+            <h3 class="section-heading text-center mb-5">Code of Conduct</h3>
+    
+            <div class="code-of-conduct">
+                <p><strong>PySTL Meetup Code of Conduct</strong></p>
+                <p>Our meetup is dedicated to providing a welcoming, inclusive, and harassment-free experience for everyone, regardless of background, identity, or experience level. We follow the Python Software Foundation's Code of Conduct to ensure a respectful and professional environment.</p>
+    
+                <h5 class="mt-4">Expected Behavior</h5>
+                <p>All participants (attendees, speakers, sponsors, organizers, and volunteers) are expected to:</p>
+                <ul>
+                    <li>Be respectful and considerate to others.</li>
+                    <li>Use welcoming and inclusive language.</li>
+                    <li>Respect differing viewpoints and experiences.</li>
+                    <li>Accept constructive criticism gracefully.</li>
+                    <li>Show courtesy and empathy toward fellow participants.</li>
+                    <li>Maintain a professional environment, both in person and online.</li>
+                </ul>
+    
+                <h5 class="mt-4">Unacceptable Behavior</h5>
+                <p>The following behaviors are considered harassment and are not acceptable:</p>
+                <ul>
+                    <li>Intimidation, stalking, or following.</li>
+                    <li>Harassing photography or recording.</li>
+                    <li>Sustained disruption of talks or other events.</li>
+                    <li>Inappropriate physical contact or unwelcome sexual attention.</li>
+                    <li>Offensive or derogatory comments, including jokes, slurs, or personal insults, especially those related to gender, gender identity, sexual orientation, disability, race, ethnicity, age, religion, or technology choices.</li>
+                    <li>Advocating for or encouraging any of the above behavior.</li>
+                </ul>
+    
+                <h5 class="mt-4">Reporting</h5>
+                <p>If you experience or witness unacceptable behavior, please report it to Kevin Lai (the event organizer) at <a href="mailto:kevinlai31@gmail.com">kevinlai31@gmail.com</a>. All reports will be handled with discretion and confidentiality.</p>
+    
+                <h5 class="mt-4">Enforcement</h5>
+                <p>Participants asked to stop any harassing behavior are expected to comply immediately. If a participant engages in unacceptable behavior, the organizers may take any action they deem appropriate, including:</p>
+                <ul>
+                    <li>A verbal warning</li>
+                    <li>Expulsion from the meetup</li>
+                    <li>Permanent ban from PySTL and partner organizations</li>
+                </ul>
+                <p>We reserve the right to refuse or revoke admission to any individual who violates this Code of Conduct.</p>
+    
+                <h5 class="mt-4">Attribution</h5>
+                <p>This Code of Conduct is adapted from the Python Software Foundation Code of Conduct and the Contributor Covenant.</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+	<footer class="footer py-5 theme-bg-primary">
+		<div class="container text-center">
+
+			<ul class="social-list list-inline mb-4">
+				<li class="list-inline-item me-3"><a href="#"><i class="fas fa-envelope"></i></a></li>
+				<li class="list-inline-item me-3"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
+				<li class="list-inline-item me-3"><a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
+				<li class="list-inline-item me-0"><a href="#"><i class="fa-brands fa-youtube fa-fw"></i></a></li>
+			</ul><!--//social-list-->
+
+
+			<ul class="footer-links list-inline mx-auto mb-4">
+				<li class="list-inline-item"><a href="./code-of-conduct.html">Code of Conduct</a></li>
+				<li class="list-inline-item">|</li>
+				<li class="list-inline-item"><a href="#">Terms</a></li>
+				<li class="list-inline-item">|</li>
+				<li class="list-inline-item me-0"><a href="#">Privacy</a></li>
+			</ul><!--//footer-link-->
+
+			<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			<small class="copyright">Designed with <i class="fas fa-heart" style="color: #EC645E;"></i> by <a
+					href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+
+		</div><!--//container-->
+	</footer>
+
+	<!-- Modal Speaker -->
+	<div class="modal modal-speaker modal-speaker-1" id="modal-speaker-1" tabindex="-1" role="dialog"
+		aria-labelledby="speaker-1-ModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 id="speaker-1-ModalLabel" class="modal-title sr-only">David Hoover</h4>
+				</div>
+				<div class="modal-body p-0">
+					<div class="theme-bg-light p-5">
+						<div class="row">
+							<div class="col-12 col-md-auto text-center">
+								<img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto"
+									src="assets/images/speakers/ScottAnderson.jpg" alt="" />
+							</div>
+							<div class="col text-center text-md-start mx-auto">
+								<h2 class="name mb-2">Scott Anderson</h2>
+								<div class="meta">Principle Data Engineer</div>
+								<div class="meta mb-2">Slalom</div>
+								<ul class="social-list list-inline mb-0">
+									<li class="list-inline-item"><a
+											href="https://www.linkedin.com/in/scott-anderson-cfa/"><i
+												class="fa-brands fa-linkedin-in fa-fw"></i></a></li>
+								</ul><!--//social-list-->
+							</div><!--//col-->
+						</div><!--//row-->
+					</div>
+					<div class="desc p-4 p-lg-5">
+						<p>Scott Anderson is a Data Engineer at Slalom. When Scott isn't at programming meetups, he is hanging out with his wife.</p>
+					</div>
+				</div><!--//modal-body-->
+			</div><!--//modal-content-->
+		</div><!--//modal-dialog-->
+	</div><!--//modal-->
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
