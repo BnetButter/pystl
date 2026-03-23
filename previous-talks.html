@@ -21,6 +21,13 @@
 
 	<!-- Theme CSS -->
 	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<style>
+		iframe {
+			width: 100%;
+			height: auto;
+			max-height: 800px;
+		}
+		</style>
 
 
 </head>
@@ -44,7 +51,7 @@
 						<ul class="nav navbar-nav">
 							<li class="nav-item"><a class="nav-link" href=	"./index.html#about-section">About</a></li>
 							<li class="nav-item"><a class="nav-link" href="./index.html#schedule-section">Schedule</a></li>
-						<!--	<li class="nav-item"><a class="nav-link" href="./previous-talks.html">Previous Talks</a></li> -->
+							<li class="nav-item"><a class="nav-link" href="./previous-talks.html">Previous Talks</a></li>
 							<li class="nav-item"><a class="nav-link" href="./index.html#venue-section">Venue</a></li>
 							<li class="nav-item"><a class="nav-link"
 									href="#steering-committee-section">Steering Comittee</a></li>
@@ -143,10 +150,64 @@
 <section id="schedule-section" class="schedule-section section">
     <div class="container">
         <h3 class="section-heading text-center mb-5">Previous Talks</h3>
+		<div class="talk">
+            <h5 class="talk-title">Fast Python with Rust</h5>
+   			<iframe width="100%" src="" title="Fast Python with Rust" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+			<p class="talk-date"><strong>Date:</strong>March 19th, 2026</p>
+            <p class="talk-description">
+               We will look at how to effectively use Rust in Python to write faster applications through the incremental development of a small library for dictionary based math utilities. We will start with basic project setup and alk through the optimizations needed to make the library faster than Numpy at basic operations.
+			</p>
+            <p class="talk-speaker"><strong>Speaker:</strong><a href="https://www.linkedin.com/in/achernyak/">Artem Chernyak</a></p>
+            <p><a href="https://www.meetup.com/python-stlouis/events/313705609/" target="_blank">View Meetup</a></p>
+        </div>
 		
 		<div class="talk">
+            <h5 class="talk-title">Selenium Grid: End-to-End Testing of Django Web Apps</h5>
+			<iframe src="https://www.youtube.com/embed/w7UYHOrHkoQ" title="PySTL #8 - Selenium Grid: End to End Testing of Django Web Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>			<p class="talk-date"><strong>Date:</strong>February 19 2026</p>
+            <p class="talk-description">
+               Selenium is a browser automation tool that can automate UI interactions. However, automated UI testing introduces several challenges, like headless operations, managing multiple browsers, visualization, login/authentication, and state management.
+				This talk goes over lessons learned deploying Selenium to verify enterprise software for correct behavior. 
+			</p>
+            <p class="talk-speaker"><strong>Speaker:</strong><a href="https://www.linkedin.com/in/kevinlai31/">Kevin Lai</a></p>
+            <p><a href="https://www.meetup.com/python-stlouis/events/313204712/" target="_blank">View Meetup</a></p>
+        </div>
+
+		<div class="talk">
+            <h5 class="talk-title">Quantum Inspired Facial Recognition</h5>
+			<iframe src="https://www.youtube.com/embed/pwtCHo6gpqc" title="PySTL #7 - Quantum Inspired Facial Recognition" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>			<p class="talk-date"><strong>Date:</strong>January 15, 2026</p>
+            <p class="talk-description">
+              This talk introduces a quantum-inspired approach to face recognition that uses interference-like feature modulation within standard deep learning pipelines. Instead of relying on quantum hardware, the model simulates quantum interference using sinusoidal transformations inside a multi-head attention mechanism. We’ll walk through the architecture, training with triplet loss, and practical implementation details in Python. The goal is to show how ideas from quantum mechanics can meaningfully improve robustness and efficiency in real-world vision models.
+			</p>
+            <p class="talk-speaker"><strong>Speaker:</strong><a href="https://www.linkedin.com/in/aayush-gauba-4b1223161/">Aayush Gauba</a></p>
+            <p><a href="https://www.meetup.com/python-stlouis/events/312616938/" target="_blank">View Meetup</a></p>
+        </div>
+
+		
+		<div class="talk">
+            <h5 class="talk-title">Application Performance Monitoring with OpenTelemetry</h5>
+   			<iframe width="100%" src="" title="Fast Python with Rust" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+			<p class="talk-date"><strong>Date:</strong>November 20, 2025</p>
+            <p class="talk-description">
+            	Do you know what your applications are up to? OpenTelemetry (OTEL) is a vendor neutral framework for observability that helps you answer that question. This talk will go over the basic concepts of OTel, how to integrate it with your own applications, and how to get meaningful insights of your telemetry data.
+			</p>
+            <p class="talk-speaker"><strong>Speaker:</strong><a href="https://www.linkedin.com/in/david-hoover-00b7ba52/">David Hoover</a></p>
+            <p><a href="https://www.meetup.com/python-stlouis/events/311936925/" target="_blank">View Meetup</a></p>
+        </div>
+		
+				
+		<div class="talk">
+            <h5 class="talk-title">Ayncio with Websockets and Desktop GUI</h5>
+   			<iframe width="100%" src="" title="Fast Python with Rust" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+			<p class="talk-date"><strong>Date:</strong>October 16, 2025</p>
+            <p class="talk-description">
+				Aysncio is Python's model for single threaded concurrency. It is extremely powerful in applications where multithreading is not possible like Desktop GUI programming. When combined with websockets, we can build real time applications that respond to external publish events.			</p>
+            <p class="talk-speaker"><strong>Speaker:</strong><a href="https://www.linkedin.com/in/kevinlai31/">Kevin Lai</a></p>
+            <p><a href="https://www.meetup.com/python-stlouis/events/311271894/" target="_blank">View Meetup</a></p>
+        </div>
+
+		<div class="talk">
             <h5 class="talk-title">Genetic Programming: Tree-Based GP and PushGP</h5>
-   			<iframe width="1047" height="589" src="https://www.youtube.com/embed/ZzYi_j2IYuY" title="PySTL #4 - Genetic Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+   			<iframe width="100%" src="https://www.youtube.com/embed/ZzYi_j2IYuY" title="PySTL #4 - Genetic Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 			<p class="talk-date"><strong>Date:</strong>September 18, 2025</p>
             <p class="talk-description">
                Modern Genetic Programming is often implemented in Python. This talk explores the core concepts of Genetic Programming and introduces key libraries used in the field, with a particular focus on DEAP and PyshGP.
@@ -157,7 +218,7 @@
 
         <div class="talk">
             <h5 class="talk-title">Anomaly Detection in Digital Elevation Models</h5>
-   			<iframe src="https://drive.google.com/file/d/1MRaseHUQFCahCtS8PnlIdzgazmygJpe4/preview" width="100%" height="320" allow="autoplay"></iframe>            
+   			<iframe src="https://drive.google.com/file/d/1MRaseHUQFCahCtS8PnlIdzgazmygJpe4/preview" width="100%" allow="autoplay"></iframe>            
 			<p class="talk-date"><strong>Date:</strong> August 21, 2025</p>
             <p class="talk-description">
                 The National Map provides digital elevation, lidar, and hydrography data for the United States. Data is collected by contractors and manually reviewed by the USGS.
@@ -171,8 +232,8 @@
 
         <div class="talk mt-5">
             <h5 class="talk-title">Pydantic</h5>
-			<iframe width="1047" height="589" src="https://www.youtube.com/embed/W3CvklHCgIo" title="PySTL #2 - Pydantic Pt. 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			<iframe width="1047" height="589" src="https://www.youtube.com/embed/lTDjzOPI75k" title="PySTL #2 - Pydantic Pt. 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<iframe width="100%" src="https://www.youtube.com/embed/W3CvklHCgIo" title="PySTL #2 - Pydantic Pt. 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<iframe width="100%" src="https://www.youtube.com/embed/lTDjzOPI75k" title="PySTL #2 - Pydantic Pt. 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p class="talk-date"><strong>Date:</strong> July 17, 2025</p>
             <p class="talk-description">
                 Parse, Don't Validate. This talk explains how to incorporate the Pydantic parsing and validation library into your application.
@@ -184,7 +245,7 @@
 
         <div class="talk mt-5">
             <h5 class="talk-title">Deploying and Monitoring AI Models</h5>
-            <iframe src="https://drive.google.com/file/d/193Xg2j_g2vtFQfpjP5sXV4KvHpEyq_qU/preview" width="100%" height="320" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/193Xg2j_g2vtFQfpjP5sXV4KvHpEyq_qU/preview" width="100%" allow="autoplay"></iframe>
             <p class="talk-date"><strong>Date:</strong> June 19, 2025</p>
             <p class="talk-description">
                 This talk discusses methods for deploying asynchronous machine learning models to detect cracks in bridges using drone inspection data.
@@ -263,5 +324,8 @@
 	<script src="assets/plugins/smoothscroll.min.js"></script>
 	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+
+	</script>
 </body>
 </html>
