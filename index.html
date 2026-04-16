@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A meetup for Python Developers">
 	<meta name="author" content="Kevin Lai">
-	<link rel="shortcut icon" href="favicon.png">
+	<link rel="shortcut icon" href="favicon.webp">
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800|Roboto:300,400,700&display=swap"
@@ -31,7 +31,7 @@
 			<div class="container-fluid">
 				<nav class="main-nav navbar navbar-expand-lg">
 					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon"
-								src="favicon.png" alt="logo"></a></div>
+								src="assets/images/PySTL.webp" alt="logo"></a></div>
 
 					<!--<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Tickets</a></div>-->
 
@@ -42,14 +42,16 @@
 
 					<div id="navigation" class="navbar-collapse collapse  justify-content-lg-end me-lg-3">
 						<ul class="nav navbar-nav">
-							<li class="nav-item"><a class="nav-link scrollto" href=	"#about-section">About</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#about-section">About</a></li>
 							<li class="nav-item"><a class="nav-link scrollto" href="#schedule-section">Schedule</a></li>
-							<li class="nav-item"><a class="nav-link" href="./previous-talks.html">Previous Talks</a></li>
+							<li class="nav-item"><a class="nav-link" href="./previous-talks.html">Previous Talks</a>
+							</li>
 							<li class="nav-item"><a class="nav-link scrollto" href="#venue-section">Venue</a></li>
 
 							<li class="nav-item"><a class="nav-link scrollto"
 									href="#steering-committee-section">Steering Comittee</a></li>
-							<li class="nav-item"><a class="nav-link" href="./code-of-conduct.html">Code of Conduct</a></li>
+							<li class="nav-item"><a class="nav-link" href="./code-of-conduct.html">Code of Conduct</a>
+							</li>
 						</ul><!--//nav-->
 					</div><!--//navabr-collapse-->
 
@@ -100,15 +102,22 @@
 			});
 		</script>
 		<div class="hero-block-mask"></div>
-		<div class="container">
+		<div class="container" style="display: flex; justify-content: space-between;">
 			<div class="hero-text-block">
-				<h1 class="hero-heading mb-2">PySTL</h1>
-				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>April 16th, 2026<br /><i
-						class="fas fa-map-marker-alt"></i> <a style="color: white;" href="https://www.google.com/maps?q=4818+Washington+Boulevard,+St.+Louis" target="_blank">4818 Washington Boulevard, St. Louis</a></div>
-				<div class="hero-intro mb-4">Every 3rd Thursdays<br>6pm-8pm</div>
-				<!-- <div class="hero-cta"><a class="btn btn-primary btn-lg" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Get Tickets</a></div> -->
-
+				<div class="hero-text-content">
+					<h1 class="hero-heading mb-2">Python St. Louis</h1>
+					<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>April 16th, 2026<br /><i
+							class="fas fa-map-marker-alt"></i> <a style="color: white;"
+							href="https://www.google.com/maps?q=4818+Washington+Boulevard,+St.+Louis"
+							target="_blank">4818
+							Washington Boulevard, St. Louis</a></div>
+					<div class="hero-intro mb-4">Every 3rd Thursdays<br>6pm-8pm</div>
+					<!-- <div class="hero-cta"><a class="btn btn-primary btn-lg" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Get Tickets</a></div> -->
+				</div>
 			</div><!--//hero-text-block-->
+			<div class="hero-logo" style="z-index: 20;">
+				<img src="assets/images/PySTL.webp" alt="PySTL Logo" style="max-width: 250px; height: auto;">
+			</div>
 		</div><!--//container-->
 
 	</div><!--//hero-block-->
@@ -146,13 +155,19 @@
 			<h3 class="section-heading text-center mb-3">AI Web Application Firewall</h3>
 
 			<div class="section-intro single-col-max mx-auto mb-4">
-				AIWAF is a middleware level security system designed for frameworks like Django, Flask, and FastAPI, allowing protection to be integrated directly into the application layer. Instead of relying on static rules, it analyzes request behavior in real time to detect anomalies and malicious patterns. The system combines feature extraction, adaptive learning, and anomaly detection to make intelligent decisions on whether to allow or block traffic. It includes a Rust based accelerator for high performance request validation. In this talk, we'll dive into how the AIWAF ecosystem works and how it enables applications to defend themselves dynamically.
+				AIWAF is a middleware level security system designed for frameworks like Django, Flask, and FastAPI,
+				allowing protection to be integrated directly into the application layer. Instead of relying on static
+				rules, it analyzes request behavior in real time to detect anomalies and malicious patterns. The system
+				combines feature extraction, adaptive learning, and anomaly detection to make intelligent decisions on
+				whether to allow or block traffic. It includes a Rust based accelerator for high performance request
+				validation. In this talk, we'll dive into how the AIWAF ecosystem works and how it enables applications
+				to defend themselves dynamically.
 			</div>
 			<div class="benefits-list text-center mb-3">
 				<div class="profile">
 					<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">
-						<img class="profile-image rounded-circle mb-2" src="assets/images/speakers/aayush.jpeg"
-							alt="" style="width: 150px; height: auto;">
+						<img class="profile-image rounded-circle mb-2" src="assets/images/speakers/aayush.jpeg" alt=""
+							style="width: 150px; height: auto;">
 						<div class="name"><a class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal"
 								data-bs-target="#modal-speaker-1">Aayush Gauba</a>
 						</div>
@@ -161,8 +176,7 @@
 
 		</div><!--//container-->
 		<div class="speakers-cta text-center py-3"><a class="btn btn-primary btn-lg"
-				href="https://www.meetup.com/python-stlouis/events/314009468/"
-				target="_blank">RSVP</a>
+				href="https://www.meetup.com/python-stlouis/events/314009468/" target="_blank">RSVP</a>
 		</div>
 		<div style="display:none" class="media-block theme-bg-primary py-5">
 			<div class="container">
@@ -502,9 +516,14 @@
 						</div><!--//row-->
 					</div>
 					<div class="desc p-4 p-lg-5">
-						<p>Aayush Gauba is a researcher and software engineer working at the intersection of quantum-inspired machine learning, computer vision, and applied Python systems. His work focuses on translating ideas from quantum mechanics into practical, GPU-friendly deep learning architectures. He has presented research at venues including IEEE, DjangoCon, PyData and academic conferences in quantum AI. His recent work explores robustness and efficiency in neural networks without requiring quantum hardware.
+						<p>Aayush Gauba is a researcher and software engineer working at the intersection of
+							quantum-inspired machine learning, computer vision, and applied Python systems. His work
+							focuses on translating ideas from quantum mechanics into practical, GPU-friendly deep
+							learning architectures. He has presented research at venues including IEEE, DjangoCon,
+							PyData and academic conferences in quantum AI. His recent work explores robustness and
+							efficiency in neural networks without requiring quantum hardware.
 
-</p>
+						</p>
 					</div>
 				</div><!--//modal-body-->
 			</div><!--//modal-content-->
